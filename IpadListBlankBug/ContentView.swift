@@ -10,7 +10,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        NavigationView {
+            List {
+                ForEach(1...50, id: \.self) { num in
+                    Text("Row \(num)")
+                }
+                .listRowInsets(EdgeInsets())
+            }
+            .navigationBarTitle(Text("Featured"))
+        }
+
     }
 }
 
