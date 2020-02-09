@@ -19,6 +19,7 @@ struct ContentView: View {
             }
             .navigationBarTitle(Text("Featured"))
         }
+        .navigationViewStyle(StackNavigationViewStyle())
 
     }
 }
